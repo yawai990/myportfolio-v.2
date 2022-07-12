@@ -1,5 +1,5 @@
 import {AiFillHome} from 'react-icons/ai';
-import {html,css,javascript,jquery,sass,bootstrap,react} from '../assets';
+import {html,css,javascript,jquery,sass,bootstrap,react,pjt01,pjt02} from '../assets';
 
 export const NavLink = [
     {
@@ -72,4 +72,94 @@ export const servicesData = [
         name:'react',
         desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis soluta fugiat laborum harum veritatis. Totam?'
     }
+];
+
+export const workData = [
+    {
+        id:1,
+        projects:[
+            {
+                id:1.1,
+                project:pjt01,
+                githubLink:'',
+                demoLink:'',
+                name:'ecommerce',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            },
+            {
+                id:1.2,
+                project:pjt02,
+                githubLink:'',
+                demoLink:'',
+                name:'calculator',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            },
+            {
+                id:1.3,
+                project:pjt01,
+                githubLink:'',
+                demoLink:'',
+                name:'web design',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            }
+        ]
+    },
+    {
+        id:2,
+        projects:[
+            {
+                id:2.1,
+                project:pjt01,
+                githubLink:'',
+                demoLink:'',
+                name:'ecommerce',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            },
+            {
+                id:2.2,
+                project:pjt02,
+                githubLink:'',
+                demoLink:'',
+                name:'calculator',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            },
+            {
+                id:2.3,
+                project:pjt01,
+                githubLink:'',
+                demoLink:'',
+                name:'ecommerce',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            },
+        ]
+    },
+    {
+        id:3,
+        projects:[
+            {
+                id:3.1,
+                project:pjt01,
+                githubLink:'',
+                demoLink:'',
+                name:'ecommerce',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            },
+            {
+                id:3.2,
+                project:pjt02,
+                githubLink:'',
+                demoLink:'',
+                name:'calculator',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            },
+            {
+                id:3.3,
+                project:pjt01,
+                githubLink:'',
+                demoLink:'',
+                name:'ecommerce',
+                desc:'A Portfolio/Project section is a section on the website where you can display unlimited separate articles relating to your business.'
+            },
+        ]
+    },
 ]

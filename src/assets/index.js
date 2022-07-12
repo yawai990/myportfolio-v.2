@@ -5,3 +5,5 @@ export {default as jquery} from './image/jquery.png';
 export {default as bootstrap} from './image/bootstrap.png';
 export {default as sass} from './image/sass.png';
 export {default as react} from './image/react.png';
+export {default as pjt01} from './image/pjt01.jpg';
+export {default as pjt02} from './image/pjt02.jpg';

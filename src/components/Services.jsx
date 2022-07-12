@@ -3,10 +3,10 @@ import { servicesData } from '../data/data';
 
 const Services = () => {
   return (
-    <div className='w-full bg-slate-800 min-h-screen p-2'>
+    <div className='w-full bg-slate-800 p-2'>
 
               <p className='text-2xl text-gray-600 text-center mt-3'>This is what can I do for you
-              <div className='w-20 m-auto mt-2 border-b border-4 rounded-lg border-cyan-800'></div>
+              <span className='w-20 m-auto mt-2 border-b border-4 rounded-lg block border-cyan-800'></span>
               </p>
               
               <div className="w-full flex justify-center items-start p-5 mt-4">

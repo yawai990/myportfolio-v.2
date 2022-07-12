@@ -22,7 +22,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='w-full bg-slate-800 h-screen flex flex-col md:flex-row justify-center items-center relative'>
+    <div className='w-full h-auto md:h-screen bg-slate-800 flex flex-col md:flex-row justify-center items-center relative'>
 
        <div className='md:w-2/4 h-80 w-full h-screen flex flex-col justify-center items-center'>
           <h1 className='text-5xl mb-5 text-slate-200'>
@@ -35,7 +35,7 @@ const Contact = () => {
          
         </div>
 
-        <div className='md:w-2/4 h-80 w-full h-screen flex justify-center items-center ml-3'>
+        <div className='md:w-2/4 h-80 w-full h-screen flex justify-center items-center ml-3 mt-5 pt-3 md:mt-0 md:pt-0'>
           <form action="" className='w-10/12 m-auto' onSubmit={handleSubmit}>
               <div className='w-full mb-5'>
                 <input type="text" name='name' id='name' className='w-10/12 border-b bg-transparent px-2 py-1 focus:outline-none text-white block m-auto' placeholder='Your Name' value={sendData.name} onChange={e=>setSendData({...sendData,[e.target.name]:e.target.value})} />
@@ -53,7 +53,7 @@ const Contact = () => {
           </form>
         </div>
 
-        <footer className='w-full h-15 md:absolute bottom-0 flex justify-between border-t flex-col md:flex-row'>
+        <footer className='w-full md:h-15 md:absolute bottom-0 flex justify-between border-t flex-col md:flex-row'>
           <div className='border-b md:border-r md:border-b-0 md:w-3/12'>
             <p className='text-gray-600 text-center'>Call Me</p>
             <a href='tel:+959250364540'  className='text-slate-200 text-center block'>+9592503644540</a>
