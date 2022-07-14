@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { useStateContext } from '../context/Context';
 
 const initState={
   name:'',
@@ -8,6 +9,7 @@ const initState={
 
 const Contact = () => {
   const [sendData,setSendData] = useState(initState);
+  const {currentColor} = useStateContext();
 
   const handleSubmit = (e)=>{
     e.preventDefault()
@@ -48,7 +50,9 @@ const Contact = () => {
               </div>
 
             <div className="w-full py-5">
-                      <button type='submit' className='w-10/12 p-2 rounded-lg border text-white hover:bg-slate-400 hover:text-white block m-auto'>Share Your Feedback</button>
+                      <button type='submit' style={{
+                        borderColor:currentColor
+                      }} className='w-10/12 p-2 rounded-lg border text-white hover:bg-slate-400 hover:text-white block m-auto'>Share Your Feedback</button>
             </div>
           </form>
         </div>

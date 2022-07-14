@@ -22,7 +22,7 @@ const Work = () => {
                    <div key={work.id} className='w-full h-auto rounded-lg flex flex-wrap justify-center md:justify-between drop-shadow-3xl'>
                            {work.projects.map(project=>(
                             <div key={project.id} className='w-full sm:w-96 h-auto pb-2 md:w-80 rounded-lg bg-white overflow-hidden mt-2'>
-                              <div id='cardImg'  className='h-4/6 relative hover:last:border' onMouseEnter={e=>console.log(e)}>
+                              <div id='cardImg'  className='h-4/6 relative hover:last:border'>
                                 <img src={project.project} alt="" className='w-full h-full object-cover' />
                                 <div id='cardCover' className='w-full h-full bg-zinc-800/[.6] absolute top-0 left-0 flex justify-around items-center z-10'>
                                     <a href="" className=''>
