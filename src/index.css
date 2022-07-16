@@ -5,7 +5,10 @@
     padding: 5px;
     color: white;
 }
-
+#profile{
+    border-radius:54% 100% 42% 100% / 48% 100% 43% 100% ;
+    overflow: hidden;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

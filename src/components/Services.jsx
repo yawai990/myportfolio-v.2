@@ -3,7 +3,7 @@ import { servicesData } from '../data/data';
 
 const Services = () => {
   return (
-    <div className='w-full bg-slate-800 p-2 mt-4'>
+    <div className='w-full dark:bg-gray-800 p-2'>
 
               <p className='text-2xl text-gray-600 text-center mt-3'>This is what can I do for you
               <span className='w-20 m-auto mt-2 border-b border-4 rounded-lg block border-cyan-800'></span>

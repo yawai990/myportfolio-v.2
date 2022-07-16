@@ -1,9 +1,8 @@
 import React from 'react';
 import {AiFillSetting} from 'react-icons/ai';
 import {Home,Contact,About,Work,Services, Navbar,ThemeSetting} from './components';
-import { Tooltip, TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { useStateContext } from './context/Context';
-import { Input } from 'postcss';
 
 const App = () => {
     const {currentColor,theme,setTheme,currentMode } = useStateContext();
@@ -11,13 +10,13 @@ const App = () => {
 
   return (
                 <div className={`${currentMode === 'dark' && 'dark'}`}>
-                  <div className='dark:bg-main-dark-bg'>
+                  <div className='w-screen h-screen dark:bg-main-dark-bg overflow-x-hidden'>
 
        
                 {theme && <ThemeSetting /> }
-                  <div className={`w-10 h-10 flex justify-center items-center fixed top-5 right-5 p-2 bg-white drop-shadow-xl hover:drop-shadow-3xl rounded-full`}>
+                  <div style={{backgroundColor:currentColor}} className={`w-10 h-10 flex justify-center items-center fixed bottom-5 right-5 p-2 text-white drop-shadow-2xl hover:drop-shadow-3xl rounded-full z-48`}>
                     <TooltipComponent content='Setting' position='LeftCenter'>
-                        <button onClick={setTheme} style={{color:currentColor}} className='text-3xl flex justify-center items-center'>
+                        <button onClick={setTheme} className='text-3xl flex justify-center items-center'>
                           <AiFillSetting />
                         </button>
                     </TooltipComponent>
