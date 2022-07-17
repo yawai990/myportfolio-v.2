@@ -1,4 +1,6 @@
-import {AiFillHome} from 'react-icons/ai';
+import {AiFillHome,AiFillProject} from 'react-icons/ai';
+import {MdContactPhone,MdDesignServices} from 'react-icons/md';
+import {CgProfile} from 'react-icons/cg';
 import {html,css,javascript,jquery,sass,bootstrap,react,pjt01,pjt02} from '../assets';
 
 export const NavLink = [
@@ -10,22 +12,22 @@ export const NavLink = [
     {
         id:2,
         name:'about',
-        icon:<AiFillHome />
+        icon:<CgProfile />
     },
     {
         id:3,
-        name:'services',
-        icon:<AiFillHome />
+        name:'work',
+        icon:<AiFillProject />
     },
     {
         id:4,
-        name:'services',
-        icon:<AiFillHome />
+        name:'service',
+        icon:<MdDesignServices />
     },
     {
         id:5,
         name:'contact',
-        icon:<AiFillHome />
+        icon:<MdContactPhone />
     }
 ];
 

@@ -4,6 +4,20 @@
     border-radius: 5px;
     padding: 5px;
     color: white;
+    font-size: 10px;
+    position: relative;
+}
+.e-tooltip-wrap.e-popup::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid rgba(0,0,0,0.6);
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%);
 }
 #profile{
     border-radius:54% 100% 42% 100% / 48% 100% 43% 100% ;

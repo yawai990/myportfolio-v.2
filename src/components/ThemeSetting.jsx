@@ -5,10 +5,9 @@ import { useStateContext } from '../context/Context';
 import { themeColors } from '../data/data';
 
 const ThemeSetting = () => {
-    const {currentMode,setMode,setTheme,setColor,currentColor} = useStateContext();
+    const {currentMode,setMode,theme,setTheme,setColor,currentColor} = useStateContext();
   return (
-    <div className='w-screen h-screen bg-transparent-2 fixed z-50'>
-      
+    <div style={{zIndex:1000}} className='w-screen h-screen bg-transparent-2 fixed'>
     <div style={{zIndex:'1000'}} className='w-60 h-full absolute right-0 bg-white drop-shadow-3xl rounded-tl-lg p-2'>
 
       <div className='flex justify-between items-center'>

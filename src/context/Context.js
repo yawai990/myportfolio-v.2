@@ -5,7 +5,12 @@ const myContext = createContext();
 export const ContextProvider = ({children})=>{
     const [theme,setThemeSetting] = useState(false);
     const [currentColor,setcurrentColor] = useState('#1A97F5');
-    const [currentMode,setcurrentMode] = useState('light')
+    const [currentMode,setcurrentMode] = useState('light');
+    const [sidebar,setSidebar] = useState(false);
+
+    const openSidebar = ()=>{
+        setSidebar(prev=>!prev)
+    }
 
     const setTheme=()=>{
         setThemeSetting(prev=>!prev)
@@ -22,7 +27,7 @@ export const ContextProvider = ({children})=>{
 
     return <myContext.Provider value={{
             currentColor,setcurrentColor,setMode,currentMode,
-            setColor,theme,setTheme
+            setColor,theme,setTheme,openSidebar,sidebar
     }}>
         {children}
     </myContext.Provider>
